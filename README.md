@@ -13,7 +13,7 @@ This project is a full-stack urban dashboard that visualizes Calgary buildings i
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend**: React + Three.js via `@react-three/fiber`
 - **Backend**: Flask (Python)
