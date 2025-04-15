@@ -4,7 +4,7 @@ This project is a full-stack urban dashboard that visualizes Calgary buildings i
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Frontend Dashboard**: [https://masi-vintern-test.vercel.app/](https://masi-vintern-test.vercel.app/)
 - **Backend API (GeoJSON Endpoint)**: [https://masivinterntest.onrender.com/api/buildings](https://masivinterntest.onrender.com/api/buildings)
@@ -20,13 +20,13 @@ This project is a full-stack urban dashboard that visualizes Calgary buildings i
 - **LLM Integration**: Hugging Face Inference API (Mistral-7B)
 - **Data Format**: GeoJSON (Calgary buildings)
 
-> ⚠️ **Note**: Due to GitHub’s 100 MB file limit, the `Buildings_20250414.geojson` file is excluded. The hosted backend uses a reduced version (~1MB) for deployment.
+> **Note**: Due to GitHub’s 100 MB file limit, the `Buildings_20250414.geojson` file is excluded. The hosted backend uses a reduced version (~1MB) for deployment.
 
 ---
 
-## 💻 Run Locally
+## Run Locally
 
-### 🔙 Backend Setup
+### Backend Setup
 
 ```bash
 cd backend
