@@ -35,8 +35,8 @@ import { OrbitControls, Html } from '@react-three/drei';
 import './styles.css';
 
 //API endpoints for building data and query parsing
-const API_QUERY_URL = 'http://127.0.0.1:5000/api/query';
-const API_BUILDINGS_URL = 'http://127.0.0.1:5000/api/buildings';
+const API_QUERY_URL = 'https://masivinterntest.onrender.com/api/query';
+const API_BUILDINGS_URL = 'https://masivinterntest.onrender.com/api/buildings';
 
 //individual building box in the 3D scene
 function Building({ position, width, height, depth, info, onClick, isSelected, isHighlighted }) {
