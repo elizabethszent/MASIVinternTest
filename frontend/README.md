@@ -4,46 +4,45 @@ This project is a full-stack urban dashboard that visualizes Calgary buildings i
 
 ---
 
-## Tech Stack
+## 🚀 Live Demo
+
+- **Frontend Dashboard**: [https://masi-vintern-test.vercel.app/](https://masi-vintern-test.vercel.app/)
+- **Backend API (GeoJSON Endpoint)**: [https://masivinterntest.onrender.com/api/buildings](https://masivinterntest.onrender.com/api/buildings)
+
+> No installation required — just click the links to explore the full project!
+
+---
+
+## 🛠 Tech Stack
 
 - **Frontend**: React + Three.js via `@react-three/fiber`
 - **Backend**: Flask (Python)
 - **LLM Integration**: Hugging Face Inference API (Mistral-7B)
 - **Data Format**: GeoJSON (Calgary buildings)
 
+> ⚠️ **Note**: Due to GitHub’s 100 MB file limit, the `Buildings_20250414.geojson` file is excluded. The hosted backend uses a reduced version (~1MB) for deployment.
+
 ---
-NOTE: Due to GitHub’s 100 MB file limit, the `Buildings_20250414.geojson` file is not included in this repository.
 
-To run the backend locally or deploy it publicly, please manually place the file in:
-## How to Run
+## 💻 Run Locally
 
-### Backend
+### 🔙 Backend Setup
 
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate   # or venv\Scripts\activate on Windows
+
+# Activate virtual environment:
+# Windows
+venv\Scripts\activate
+# Mac/Linux
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
-# Add your Hugging Face key to .env
+
+# Add your Hugging Face API key to a .env file
+echo HUGGINGFACE_API_KEY=your_api_key_here > .env
+
+# Run the Flask backend
 python app.py
-
-## 🚀 How to Run Locally
-
-### 🔙 Backend
-
-```bash
-cd backend
-python -m venv venv
-# Activate the environment:
-source venv/bin/activate    # Mac/Linux
-# OR
-venv\Scripts\activate       # Windows
-
-pip install -r requirements.txt
-# Make sure to add your Hugging Face key in `.env`
-python app.py
-
-
-cd frontend
-npm install
-npm start
